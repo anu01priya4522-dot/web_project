@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safarika | Every Journey Has a Story</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#home" class="logo">✳ safarika<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#plan" class="nav-button">Plan a Trip ↗</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">✈ YOUR NEXT ADVENTURE STARTS HERE</p>
+
+                <h1>Collect moments,<br>
+                    <span>not just miles.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Discover beautiful places, find your happy place,
+                    and make memories that last forever.
+                </p>
+
+                <a href="#destinations" class="primary-button">
+                    Explore Destinations →
+                </a>
+
+                <div class="hero-stats">
+                    <div><strong>6+</strong><span>Destinations</span></div>
+                    <div><strong>3</strong><span>Travel styles</span></div>
+                    <div><strong>∞</strong><span>Memories</span></div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                    alt="Beautiful mountain landscape">
+                <div class="floating-card">
+                    <span>🌿</span>
+                    <div>
+                        <strong>Your next escape</strong>
+                        <p>Somewhere beautiful</p>
+                    </div>
+                </div>
+                <div class="sun-decoration">✳</div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section categories-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR KIND OF HAPPY</p>
+                    <h2>What's your vibe?</h2>
+                </div>
+                <p>Every traveller has a different story.</p>
+            </div>
+
+            <div class="categories">
+                <button class="category active" data-category="All">🌍 All places</button>
+                <button class="category" data-category="Mountains">🏔️ Mountains</button>
+                <button class="category" data-category="Beaches">🏖️ Beaches</button>
+                <button class="category" data-category="Cities">🏙️ Cities</button>
+            </div>
+        </section>
+
+        <!-- Destinations -->
+        <section class="section destinations-section" id="destinations">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PLACES YOU'LL LOVE</p>
+                    <h2>Popular destinations<span class="coral">.</span></h2>
+                </div>
+                <p>Pick a place. Start a story.</p>
+            </div>
+
+            <div class="search-box">
+                <span>🔎</span>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search Manali, Goa, Bali...">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div class="destination-grid" id="destinationGrid">
+
+                <article class="destination-card" data-category="Mountains" data-name="Manali">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80"
+                             alt="Mountain scenery in Manali" loading="lazy">
+                        <span class="destination-tag">🏔️ Mountains</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 Himachal Pradesh, India</p>
+                        <h3>Manali</h3>
+                        <p class="card-description">Fresh mountain air and beautiful valleys.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹4,999</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Manali">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Beaches" data-name="Goa">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80"
+                             alt="Sunny tropical beach" loading="lazy">
+                        <span class="destination-tag">🏖️ Beaches</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 Goa, India</p>
+                        <h3>Goa</h3>
+                        <p class="card-description">Sunny shores, ocean views and chill vibes.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹5,499</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Goa">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Cities" data-name="Jaipur">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=700&q=80"
+                             alt="Historic architecture in Jaipur" loading="lazy">
+                        <span class="destination-tag">🏙️ Cities</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 Rajasthan, India</p>
+                        <h3>Jaipur</h3>
+                        <p class="card-description">Discover royal palaces and colourful streets.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹3,499</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Jaipur">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Beaches" data-name="Bali">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80"
+                             alt="Tropical Bali landscape" loading="lazy">
+                        <span class="destination-tag">🏖️ Beaches</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 Indonesia</p>
+                        <h3>Bali</h3>
+                        <p class="card-description">Tropical views and peaceful escapes.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹19,999</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Bali">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Mountains" data-name="Srinagar">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=700&q=80"
+                             alt="Scenic mountain destination" loading="lazy">
+                        <span class="destination-tag">🏔️ Mountains</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 Kashmir, India</p>
+                        <h3>Srinagar</h3>
+                        <p class="card-description">Peaceful lakes and breathtaking scenery.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹6,999</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Srinagar">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="destination-card" data-category="Cities" data-name="Paris">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80"
+                             alt="Paris city and Eiffel Tower" loading="lazy">
+                        <span class="destination-tag">🏙️ Cities</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="location">📍 France</p>
+                        <h3>Paris</h3>
+                        <p class="card-description">Charming streets, art and iconic sights.</p>
+                        <div class="card-bottom">
+                            <p>From <strong>₹39,999</strong><small> / person*</small></p>
+                            <button class="details-button" data-place="Paris">Explore ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results" hidden>
+                No destinations found. Try another search!
+            </p>
+            <p class="price-note">*Illustrative sample prices, not live travel offers.</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-icon">💛</div>
+            <p class="eyebrow">A LITTLE ABOUT US</p>
+            <h2>Travel is more than a destination.</h2>
+            <p>
+                At Safarika, we believe every journey brings a new story.
+                We help you discover places, dream a little bigger,
+                and plan your next adventure.
+            </p>
+        </section>
+
+        <!-- Trip Planner -->
+        <section class="section plan-section" id="plan">
+            <div class="plan-intro">
+                <p class="eyebrow">YOUR NEXT CHAPTER</p>
+                <h2>Let's plan something <span class="coral">wonderful.</span></h2>
+                <p>Tell us a little about your dream trip.</p>
+                <div class="plan-decoration">✈️ 🌴 ☀️</div>
+            </div>
+
+            <form id="tripForm" class="trip-form">
+                <label for="tripDestination">Where do you want to go?</label>
+                <select id="tripDestination" required>
+                    <option value="">Choose a destination</option>
+                    <option>Manali</option>
+                    <option>Goa</option>
+                    <option>Jaipur</option>
+                    <option>Bali</option>
+                    <option>Srinagar</option>
+                    <option>Paris</option>
+                </select>
+
+                <div class="form-row">
+                    <div>
+                        <label for="tripDate">Travel date</label>
+                        <input type="date" id="tripDate" required>
+                    </div>
+                    <div>
+                        <label for="travellers">Travellers</label>
+                        <select id="travellers" required>
+                            <option value="1">1 traveller</option>
+                            <option value="2" selected>2 travellers</option>
+                            <option value="3">3 travellers</option>
+                            <option value="4">4 travellers</option>
+                            <option value="5">5 travellers</option>
+                            <option value="6">6 travellers</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="primary-button form-button">
+                    Create My Trip ✨
+                </button>
+
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">✳ safarika<span>.</span></a>
+        <p>Every journey has a story. Make yours wonderful.</p>
+        <a href="#home">Back to top ↑</a>
+        <small>© 2026 Safarika.Every journey has a story.</small>
+    </footer>
+
+</body>
+</html>
